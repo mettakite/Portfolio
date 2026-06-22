@@ -30,16 +30,16 @@ Documentation I wrote and owned in this role includes:
 
 - **Payment Lifecycle**: An end-to-end walkthrough of a payment from buyer request → `Authorization` → capture → `Transfer` → `Settlement`, mapping each state change to its webhook and dashboard view. A clear example of full-workflow documentation rather than feature-by-feature reference.
 - **Onboarding with the Finix API**: A precise, step-by-step walkthrough on how to onboard a merchant: collecting the merchant's information and consent, creating an `Identity` for the merchant, adding associated owners with 25%+ ownership, adding a bank account, and verifying the merchant — the kind of gap-free, compliance-sensitive flow that has to be exactly right.
-- **Merchant payouts & settlements** — approving settlements, managing payouts, collecting fees, and batch-settlement workflows.
-- **Developer reference** — webhooks and event types, errors and failure codes, API keys, user roles, rate limits, idempotency, and versioning.
-- **Platform guides** — platform onboarding checklist and quick-start guides for software platforms building on Finix.
-- **OpenAPI specification** — sole-authored and maintained: endpoint descriptions, request/response fields, enums, and examples, with tags and endpoint groups mapped into the portal's navigation.
+- **Merchant payouts & settlements**: Approving settlements, managing payouts, collecting fees, and batch-settlement workflows.
+- **Developer reference**: Webhooks and event types, errors and failure codes, API keys, user roles, rate limits, idempotency, and versioning.
+- **Platform guides**: Platform onboarding checklist and quick-start guides for software platforms building on Finix.
+- **OpenAPI specification**: Endpoint descriptions, request/response fields, enums, and examples, with tags and endpoint groups mapped into the portal's navigation.
 
 *Excerpts from several of these pages are in [Writing Samples](./writing-samples.md). Full articles available on request.*
 
 ### Nium — Senior Technical Writer · *sole documentation owner* (2024–2026)
 
-Global cross-border payments platform. Again the sole writer; migrated the entire documentation set from ReadMe to a GitHub/Vercel docs-as-code platform.
+Global cross-border payments platform. Migrated the entire documentation set from ReadMe to a GitHub/Vercel docs-as-code platform.
 
 **Stack:** Docusaurus · Vercel · MDX · OpenAPI
 
@@ -49,7 +49,7 @@ Documentation I wrote and owned in this role includes:
 - **Payouts**: Transfer money, beneficiaries, bulk payouts, and payout tracking, plus payins, wallets, and cards.
 - **Cross-border money movement**: Foreign exchange, open banking, transactions, reports, and fees and limits across a global payments network.
 - **Release notes**: Authored 50+ changelog entries keeping developers current with a fast-moving platform.
-- **OpenAPI specification**: Sole owner of a ~1.5 MB production spec: endpoint descriptions, usage explanations, hyperlinks to guides, and code samples.
+- **OpenAPI specification**: Endpoint descriptions, usage explanations, hyperlinks to guides, and code samples.
 - **Platform migration**: Moved documentation and OpenAPI content from ReadMe to a GitHub/Vercel docs-as-code system, improving version control, publishing workflows, and long-term maintainability.
 
 *Excerpts from several of these pages are in [Writing Samples](./writing-samples.md). Full articles available on request.*
@@ -71,9 +71,9 @@ A Python workflow that compares OpenAPI specifications against Markdown document
 
 ## Selected samples
 
-For cdurated excerpts of documentation I wrote and solely owned — see **[Selected Writing Samples](./writing-samples.md)**:
+For curated excerpts of documentation I wrote and solely owned — see **[Selected Writing Samples](./writing-samples.md)**:
 
-- **[Payment Lifecycle (Finix)](./writing-samples.md#1-payment-lifecycle--finix)** — end-to-end workflow from buyer request to seller payout
+- **[Payment Lifecycle (Finix)](./writing-samples.md#1-payment-lifecycle--finix)** -end-to-end workflow from buyer request to merchant payout
 - **[Onboarding with the Finix API (Finix)](./writing-samples.md#2-onboarding-with-the-finix-api--finix)** — precise, compliance-sensitive steps with consent capture
 - **[Key Concepts (Nium)](./writing-samples.md#3-key-concepts--nium)** — explaining complex global payments infrastructure clearly
 - **[Payouts (Nium)](./writing-samples.md#4-payouts--nium)** — audience-aware orientation to a global payouts product

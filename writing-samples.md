@@ -1,6 +1,6 @@
 # Selected Writing Samples — Ketan Mehta
 
-These are excerpts from developer and product documentation I wrote and **solely owned** as the only technical writer at **Finix** and **Nium**, two API-first payments platforms. They're representative samples — trimmed for length, with internal links, images, and example credentials removed. I'm happy to walk through the full pages on request.
+These are excerpts from developer and product documentation I wrote and as the only technical writer at **Finix** and **Nium**, two API-first payments platforms. They're representative samples — trimmed for length, with internal links, images, and example credentials removed. I'm happy to walk through the full pages on request.
 
 [← Back to portfolio](./README.md)
 
@@ -10,7 +10,7 @@ These are excerpts from developer and product documentation I wrote and **solely
 
 *End-to-end workflow documentation (not a feature summary)*
 
-**What it shows:** documenting a complete, multi-system flow — from the buyer's first request to the seller's payout — including state changes, webhooks, and dashboard touchpoints at each step.
+**Focus:** Documenting a complete, multi-system flow — from the buyer's first request to the seller's payout — including state changes, webhooks, and dashboard touchpoints at each step.
 
 > Most transactions in Finix follow a similar pattern:
 >
@@ -31,7 +31,7 @@ Each step ties an API action to the resource state it changes, the webhook it fi
 
 *Precise, gap-free steps in a compliance-sensitive flow*
 
-**What it shows:** documenting regulated merchant onboarding with exact required language, explicit consent capture, and a clean field reference.
+**Focus:** Documenting regulated merchant onboarding with exact required language, explicit consent capture, and a clean field reference.
 
 > Onboarding with the API follows the same flow regardless of the business type:
 >
@@ -62,7 +62,7 @@ In a regulated flow, the exact consent wording and the captured audit fields are
 
 *Making complex global infrastructure clear*
 
-**What it shows:** explaining a multi-entity, multi-currency global platform (clients → customers → wallets → virtual account numbers) in plain, structured language a new integrator can follow.
+**Focus:** Explaining a multi-entity, multi-currency global platform (clients → customers → wallets → virtual account numbers) in plain, structured language a new integrator can follow.
 
 > Nium is a flexible, comprehensive, and easy-to-embed fintech infrastructure platform. Companies use Nium to launch and manage their payment platforms, with features including:
 >
@@ -87,7 +87,7 @@ Spelling out acronyms on first use, defining terms as they appear, and grounding
 
 *Audience-aware orientation to a broad capability*
 
-**What it shows:** giving both developers and non-technical operators a fast, accurate mental model of a global payouts product before they dive into specifics.
+**Focus:** Giving both developers and non-technical operators a fast, accurate mental model of a global payouts product before they dive into specifics.
 
 > Nium Payouts lets you send money to over **190 countries** and make real-time, on-demand payments in more than **100 countries**. Funds move from source to destination during the transaction, automatically routed and settled in real time.
 >
