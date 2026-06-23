@@ -6,7 +6,7 @@ These are excerpts from developer and product documentation I wrote and as the o
 
 ---
 
-## 1. Payment Lifecycle — Finix
+## Payment Lifecycle — Finix
 
 *End-to-end workflow documentation (not a feature summary)*
 
@@ -27,7 +27,7 @@ Each step ties an API action to the resource state it changes, the webhook it fi
 
 ---
 
-## 2. Onboarding with the Finix API — Finix
+## Onboarding with the Finix API — Finix
 
 *Precise, gap-free steps in a compliance-sensitive flow*
 
@@ -58,7 +58,7 @@ In a regulated flow, the exact consent wording and the captured audit fields are
 
 ---
 
-## 3. Key Concepts — Nium
+## Key Concepts — Nium
 
 *Making complex global infrastructure clear*
 
@@ -83,7 +83,7 @@ Spelling out acronyms on first use, defining terms as they appear, and grounding
 
 ---
 
-## 4. Payouts — Nium
+## Payouts — Nium
 
 *Audience-aware orientation to a broad capability*
 

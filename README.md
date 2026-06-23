@@ -20,24 +20,7 @@ My focus is turning intricate, end-to-end product behavior — onboarding, payme
 
 ## Featured work
 
-### Finix — Senior Technical Writer · *sole documentation owner* (2022–2024)
-
-API-first payments platform for software companies. I was sole technical writer and the sole owner of developer documentation.
-
-**Stack:** Redocly developer portal · MDX · docs-as-code · OpenAPI
-
-Documentation I wrote and owned in this role includes:
-
-- **Payment Lifecycle**: An end-to-end walkthrough of a payment from buyer request → `Authorization` → capture → `Transfer` → `Settlement`, mapping each state change to its webhook and dashboard view. A clear example of full-workflow documentation rather than feature-by-feature reference.
-- **Onboarding with the Finix API**: A precise, step-by-step walkthrough on how to onboard a merchant: collecting the merchant's information and consent, creating an `Identity` for the merchant, adding associated owners with 25%+ ownership, adding a bank account, and verifying the merchant — the kind of gap-free, compliance-sensitive flow that has to be exactly right.
-- **Merchant payouts & settlements**: Approving settlements, managing payouts, collecting fees, and batch-settlement workflows.
-- **Developer reference**: Webhooks and event types, errors and failure codes, API keys, user roles, rate limits, idempotency, and versioning.
-- **Platform guides**: Platform onboarding checklist and quick-start guides for software platforms building on Finix.
-- **OpenAPI specification**: Endpoint descriptions, request/response fields, enums, and examples, with tags and endpoint groups mapped into the portal's navigation.
-
-*Excerpts from several of these pages are in [Writing Samples](./writing-samples.md). Full articles available on request.*
-
-### Nium — Senior Technical Writer · *sole documentation owner* (2024–2026)
+### Nium — Senior Technical Writer · (2024–2026)
 
 Global cross-border payments platform. Migrated the entire documentation set from ReadMe to a GitHub/Vercel docs-as-code platform.
 
@@ -54,7 +37,24 @@ Documentation I wrote and owned in this role includes:
 
 *Excerpts from several of these pages are in [Writing Samples](./writing-samples.md). Full articles available on request.*
 
-### Docs Drift Script — documentation QA tooling
+### Finix — Senior Technical Writer · (2022–2024)
+
+API-first payments platform for software companies. I was sole technical writer and the sole owner of developer documentation.
+
+**Stack:** Redocly developer portal · MDX · docs-as-code · OpenAPI
+
+Documentation I wrote and owned in this role includes:
+
+- **Payment Lifecycle**: An end-to-end walkthrough of a payment from buyer request → `Authorization` → capture → `Transfer` → `Settlement`, mapping each state change to its webhook and dashboard view. A clear example of full-workflow documentation rather than feature-by-feature reference.
+- **Onboarding with the Finix API**: A precise, step-by-step walkthrough on how to onboard a merchant: collecting the merchant's information and consent, creating an `Identity` for the merchant, adding associated owners with 25%+ ownership, adding a bank account, and verifying the merchant — the kind of gap-free, compliance-sensitive flow that has to be exactly right.
+- **Merchant payouts & settlements**: Approving settlements, managing payouts, collecting fees, and batch-settlement workflows.
+- **Developer reference**: Webhooks and event types, errors and failure codes, API keys, user roles, rate limits, idempotency, and versioning.
+- **Platform guides**: Platform onboarding checklist and quick-start guides for software platforms building on Finix.
+- **OpenAPI specification**: Endpoint descriptions, request/response fields, enums, and examples, with tags and endpoint groups mapped into the portal's navigation.
+
+*Excerpts from several of these pages are in [Writing Samples](./writing-samples.md). Full articles available on request.*
+
+### Docs Drift Script — QA tooling
 
 [github.com/mettakite/Docs-Drift-Script](https://github.com/mettakite/Docs-Drift-Script)
 
