@@ -22,7 +22,7 @@ My focus is turning intricate, end-to-end product behavior — onboarding, payme
 
 ### Nium — Senior Technical Writer · (2024–2026)
 
-Global cross-border payments platform. Migrated the entire documentation set from ReadMe to a GitHub/Vercel docs-as-code platform.
+Global cross-border payments platform. I was the sole technical writer and owner of the documentation and OpenAPI spec; migrated documentation from ReadMe to a GitHub/Vercel docs-as-code platform.
 
 **Stack:** Docusaurus · Vercel · MDX · OpenAPI
 
