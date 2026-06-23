@@ -10,18 +10,18 @@ These are excerpts from developer and product documentation I wrote and as the o
 
 *End-to-end workflow documentation (not a feature summary)*
 
-**Focus:** Documenting a complete, multi-system flow — from the buyer's first request to the seller's payout — including state changes, webhooks, and dashboard touchpoints at each step.
+**Focus:** Documenting a complete, multi-system flow — from the buyer's first request to the merchant's payout — including state changes, webhooks, and dashboard touchpoints at each step.
 
 > Most transactions in Finix follow a similar pattern:
 >
-> 1. The buyer requests to make a payment with the seller.
+> 1. The buyer requests to make a payment with the merchant.
 > 2. The platform collects the buyer's information and creates an `Identity` to represent the buyer in Finix.
-> 3. The platform collects the buyer's payment information and creates a `Payment Instrument` to represent the payment method. Once created, Finix notifies the seller with a webhook (sent when a `Payment Instrument` is created from a bank account, debit, or credit card) and an entry on the **Payment Instruments** tab of the Finix Dashboard.
+> 3. The platform collects the buyer's payment information and creates a `Payment Instrument` to represent the payment method. Once created, Finix notifies the merchant with a webhook (sent when a `Payment Instrument` is created from a bank account, debit, or credit card) and an entry on the **Payment Instruments** tab of the Finix Dashboard.
 > 4. The platform creates an `Authorization` to reserve funds on the `Payment Instrument`, to be captured (debited) at a later date — usually within seven days.
 > 5. If the `Authorization` succeeds, `Authorization#state` updates to **SUCCEEDED** and `Authorization#expires_at` is set with a timestamp. If it fails, `state` updates to **FAILED**, and the platform must submit the `Authorization` again.
 > 6. The platform captures the `Authorization`. A webhook is sent when the `Authorization` is captured, and the Dashboard entry updates.
 >
-> *…the guide continues through the `Transfer`, the `ready_to_settle_at` timestamp, `Settlement` approval, and the funding `Transfer` that pays the seller's bank account in 5–7 business days.*
+> *…the guide continues through the `Transfer`, the `ready_to_settle_at` timestamp, `Settlement` approval, and the funding `Transfer` that pays the merchant's bank account in 5–7 business days.*
 
 Each step ties an API action to the resource state it changes, the webhook it fires, and where it surfaces in the dashboard — so a developer can build correct monitoring and reconciliation around it.
 
@@ -43,16 +43,16 @@ Each step ties an API action to the resource state it changes, the webhook it fi
 >
 > **Showing the Finix Terms of Service**
 >
-> You must present your sellers a link to the Finix Terms of Service. The seller must explicitly consent to the Terms of Service before you submit the Merchant `Identity` and identifying information to Finix.
+> You must present your merchants a link to the Finix Terms of Service. The merchant must explicitly consent to the Terms of Service before you submit the Merchant `Identity` and identifying information to Finix.
 >
-> You indicate that you received the seller's consent by providing the following fields when you create an `Identity`:
+> You indicate that you received the merchant's consent by providing the following fields when you create an `Identity`:
 >
 > | Field | Type | Description |
 > |---|---|---|
-> | `merchant_agreement_accepted` | *boolean*, **required** | Whether the seller has accepted the Finix Terms of Service. |
-> | `merchant_agreement_ip_address` | *string*, **required** | IP address of the seller when they accepted the Terms of Service. |
-> | `merchant_agreement_timestamp` | *string*, **required** | Timestamp of when the seller accepted the Terms of Service. |
-> | `merchant_agreement_user_agent` | *string*, **required** | The browser user agent when the seller accepted the Terms of Service. |
+> | `merchant_agreement_accepted` | *boolean*, **required** | Whether the merchant has accepted the Finix Terms of Service. |
+> | `merchant_agreement_ip_address` | *string*, **required** | IP address of the merchant when they accepted the Terms of Service. |
+> | `merchant_agreement_timestamp` | *string*, **required** | Timestamp of when the merchant accepted the Terms of Service. |
+> | `merchant_agreement_user_agent` | *string*, **required** | The browser user agent when the merchant accepted the Terms of Service. |
 
 In a regulated flow, the exact consent wording and the captured audit fields aren't optional details — they're the documentation. This page specifies both precisely.
 

@@ -14,7 +14,7 @@ My focus is turning intricate, end-to-end product behavior — onboarding, payme
 
 - **Whole workflows**: I document complete flows end to end — each state change, webhook, and handoff — rather than isolated features, since the gaps between steps are where integrations break.
 - **Verified against the product**: I write from the live product and QA/dev environments, so the documentation matches how the platform actually behaves.
-- **OpenAPI as a core deliverable**: I author and maintain the spec itself — endpoint descriptions, fields, enums, and code samples samples that make it usable.
+- **OpenAPI as a core deliverable**: I author and maintain the spec itself — endpoint descriptions, fields, enums, and code samples that make it usable.
 - **Docs-as-code**: Git-based authoring in Markdown/MDX, published through Redocly, Docusaurus, and Vercel pipelines.
 - **Quality tooling**: I build automation (see my Docs Drift Script) to surface documentation drift at scale, with review kept human-led.
 
@@ -58,7 +58,7 @@ Documentation I wrote and owned in this role includes:
 
 [github.com/mettakite/Docs-Drift-Script](https://github.com/mettakite/Docs-Drift-Script)
 
-A Python workflow that compares OpenAPI specifications against Markdown documentation to surface stale references, missing coverage, and source-content gaps. Its first run flagged **500+ potential inconsistencies across roughly 300 articles**, giving writers, engineers, and product teams a shared, prioritized review list. Built with AI tools (ChatGPT, Claude Code, GitHub Copilot) as development aids, while keeping human validation in mind.
+A Python workflow that compares OpenAPI specifications against Markdown documentation to surface stale references, missing coverage, and source-content gaps. Its first run flagged **500+ potential inconsistencies across roughly 300 articles**, giving writers, engineers, and product teams a shared, prioritized review list. Built with AI tools (ChatGPT, Claude Code, GitHub Copilot) as development aids, with validation kept human-led.
 
 ## Toolbox
 
@@ -73,7 +73,7 @@ A Python workflow that compares OpenAPI specifications against Markdown document
 
 For curated excerpts of documentation I wrote and solely owned — see **[Selected Writing Samples](./writing-samples.md)**:
 
-- **[Payment Lifecycle (Finix)](./writing-samples.md#1-payment-lifecycle--finix)** -end-to-end workflow from buyer request to merchant payout
+- **[Payment Lifecycle (Finix)](./writing-samples.md#1-payment-lifecycle--finix)** - end-to-end workflow from buyer request to merchant payout
 - **[Onboarding with the Finix API (Finix)](./writing-samples.md#2-onboarding-with-the-finix-api--finix)** — precise, compliance-sensitive steps with consent capture
 - **[Key Concepts (Nium)](./writing-samples.md#3-key-concepts--nium)** — explaining complex global payments infrastructure clearly
 - **[Payouts (Nium)](./writing-samples.md#4-payouts--nium)** — audience-aware orientation to a global payouts product
