@@ -17,7 +17,7 @@ This folder is a small, self-contained demonstration of how I structure document
 
 **One canonical example per concept.** Assistants trained on docs repeat the examples they find. A single, correct, complete sequence beats five partial variations — variation reads as richness to a human and as a contradiction to a model.
 
-**Facts an assistant must not guess are stated flatly and early.** Important details are presented front and center to ensure any code that gets gneerated is generated accuratly. Details include, units (minor units/cents), object names, state names, and version applicability.
+**Facts an assistant must not guess are stated flatly and early.** Important details are presented front and center to ensure any code that gets generated is generated accuratly. Details include, units (minor units/cents), object names, state names, and version applicability.
 
 **Freshness is a feature, not a hope.** Stale content doesn't just mislead readers anymore; it produces confidently wrong AI answers. That's why I built the [Docs Drift Script](https://github.com/mettakite/Docs-Drift-Script), which audits documentation against the OpenAPI specification to catch drift before users — human or machine — hit it. This folder and that tool are two halves of one position: structure content for retrieval, and keep it verifiably accurate.
 

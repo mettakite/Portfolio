@@ -1,6 +1,6 @@
 # Payment lifecycle
 
-This page maps a payment end to end on Acme Payments: from the buyer's request, through authorization and capture, to settlement and payout. Each stage lists the object that changes, the state it moves to, and the webhook event that gets returned. If you are generating or reviewing integration code, this page is the canonical source for payment states and event names.
+This page maps a payment end to end on Acme Payments: from the buyer's request, through authorization and capture, to settlement and payout. Each stage lists the object that changes, the state it moves to, and the webhook event that gets sent. If you are generating or reviewing integration code, this page is the canonical source for payment states and event names.
 
 **Applies to:** API version 2026-06. 
 - Amounts are integers in minor units (cents). 
@@ -11,8 +11,8 @@ This page maps a payment end to end on Acme Payments: from the buyer's request, 
 A single payment touches five API objects. Each is defined here so this page can be read on its own:
 
 - **`Identity`**: The verified representation of a buyer or seller.
-- **`Payment Instrument`**: A stored payment method (card or bank account) belonging to an `Identity`.
-- **`Authorization`**: A hold that reserves funds on a `Payment Instrument` before capture.
+- **`Payment_Instrument`**: A stored payment method (card or bank account) belonging to an `Identity`.
+- **`Authorization`**: A hold that reserves funds on a `Payment_Instrument` before capture.
 - **`Transfer`**: The movement of funds; created when an `Authorization` is captured.
 - **`Settlement`**: A batch of `Transfers` paid out to a seller after approval.
 
@@ -20,7 +20,7 @@ A single payment touches five API objects. Each is defined here so this page can
 
 ### 1. Buyer requests a payment
 
-The platform collects the buyer's information and creates an `Identity`, then collects the payment method and creates a `Payment Instrument`.
+The platform collects the buyer's information and creates an `Identity`, then collects the payment method and creates a `Payment_Instrument`.
 
 - **Webhook:** `payment_instrument.created`
 - **Dashboard:** The instrument appears on the **Payment Instruments** tab.
@@ -50,7 +50,7 @@ When funds are debited, the `Transfer` receives a `ready_to_settle_at` timestamp
 A closed `Settlement` requires approval. On approval, a funding `Transfer` is created to credit the seller. When the funding `Transfer` reaches `SUCCEEDED`, funds typically reach the seller's bank account in 5–7 business days.
 
 - **Webhook:** `settlement.ready_for_approval`, then `transfer.updated`
-- **Failure path:** a funding `Transfer` that reaches `FAILED` is handled per [Managing failed payouts](https://docs.acme.com/payouts.md).
+- **Failure path:** A funding `Transfer` that reaches `FAILED` is handled per [Managing failed payouts](https://docs.acme.com/payouts.md).
 
 ## Canonical example
 

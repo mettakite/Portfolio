@@ -16,7 +16,7 @@ My focus is turning intricate, end-to-end product behavior — onboarding, payme
 - **Verified against the product**: I write from the live product and QA/dev environments, so the documentation matches how the platform actually behaves.
 - **OpenAPI as a core deliverable**: I author and maintain the spec itself — endpoint descriptions, fields, enums, and code samples that make it usable.
 - **Docs-as-code**: Git-based authoring in Markdown/MDX, published through Redocly, Docusaurus, and Vercel pipelines.
-- **Quality tooling**: I build automation (see my Docs Drift Script) to surface documentation drift at scale, with review kept human-led.
+- **Quality tooling**: I build automation (see [Docs Drift Script](#docs-drift-script--qa-tooling) and [Docs for AI Agents](#docs-for-ai-agents--llmstxt--retrieval-first-documentation) samples), with review kept human-led.
 
 ## Featured work
 
@@ -59,6 +59,19 @@ Documentation I wrote and owned in this role includes:
 [github.com/mettakite/Docs-Drift-Script](https://github.com/mettakite/Docs-Drift-Script)
 
 A Python workflow that compares OpenAPI specifications against Markdown documentation to surface stale references, missing coverage, and source-content gaps. Its first run flagged **500+ potential inconsistencies across roughly 300 articles**, giving writers, engineers, and product teams a shared, prioritized review list. Built with AI tools (ChatGPT, Claude Code, GitHub Copilot) as development aids, with validation kept human-led.
+
+### Docs for AI Agents — llms.txt & retrieval-first documentation
+
+[View the sample →](./docs-for-ai-agents/)
+
+Developers increasingly ask Claude, Cursor, and ChatGPT to integrate with platforms on their behalf — which makes documentation a retrieval source, not just a reading experience. 
+
+This sample shows how I structure docs for both audiences: 
+
+- A curated [llms.txt](./docs-for-ai-agents/llms.txt) index in the convention used in production by platforms like Stripe and Anthropic.
+- A [retrieval-first documentation page](./docs-for-ai-agents/payment-lifecycle.md) with self-contained definitions, question-shaped headings, and one canonical example per concept. 
+
+Paired with the Docs Drift Script above, it's one position in two parts: structure content for retrieval, and keep it verifiably accurate.
 
 ## Toolbox
 
