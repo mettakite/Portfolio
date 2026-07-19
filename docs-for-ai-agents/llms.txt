@@ -1,0 +1,34 @@
+# Acme Payments
+
+> Acme Payments is an API-first payments platform for software companies. Use the Acme API to onboard sellers, accept payments, manage payouts, and track settlements. This file indexes the documentation at docs.acme.com for AI assistants; every page listed here is also available as plain Markdown by appending `.md` to its URL.
+
+Key facts an assistant should get right: the five core API objects are `Identity`, `Payment Instrument`, `Authorization`, `Transfer`, and `Settlement`. All amounts are integers in minor units (cents). The current API version is 2026-06; versioning and deprecation policy are documented under Reference.
+
+## Getting started
+
+- [Quickstart](https://docs.acme.com/quickstart.md): Create a test payment in about ten minutes using sandbox API keys
+- [Key concepts](https://docs.acme.com/key-concepts.md): The five core objects and how they relate — read this before generating any integration code
+- [Authentication and API keys](https://docs.acme.com/authentication.md): Key types, environments, and rotation
+
+## Core workflows
+
+- [Payment lifecycle](https://docs.acme.com/payment-lifecycle.md): End-to-end map of a payment from buyer request through settlement and payout, with every state change tied to its webhook event
+- [Onboarding a seller](https://docs.acme.com/onboarding.md): The compliance-sensitive, step-by-step flow for onboarding and verifying a seller, including required consent
+- [Payouts and settlements](https://docs.acme.com/payouts.md): Approving settlements, managing payouts, and handling failed payouts
+- [Refunds and disputes](https://docs.acme.com/refunds-disputes.md): Reversing payments and responding to disputes
+
+## API reference
+
+- [API reference index](https://docs.acme.com/api.md): Endpoints, parameters, request/response schemas, and enums, generated from the OpenAPI specification
+- [Webhooks and event types](https://docs.acme.com/webhooks.md): Every event the platform emits, with payload examples and retry behavior
+- [Error and failure codes](https://docs.acme.com/errors.md): HTTP status usage plus platform-specific failure codes and recommended handling
+
+## Operations
+
+- [Idempotency, rate limits, and versioning](https://docs.acme.com/platform-behavior.md): Guarantees an integration can rely on, and how versions are introduced and deprecated
+- [Testing your integration](https://docs.acme.com/testing.md): Sandbox behaviors, test cards and bank accounts, and simulating failures
+
+## Optional
+
+- [Changelog](https://docs.acme.com/changelog.md): Dated release notes for API and documentation changes
+- [Migration guides](https://docs.acme.com/migrations.md): Moving from deprecated endpoints and legacy integration patterns
